@@ -10,3 +10,5 @@ canbus based components that are used for the Larp McQueen RC Car.
 
 - Arduino
 - ESP 32
+
+> More components will be listed here
