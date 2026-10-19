@@ -11,12 +11,17 @@ void setup() {
         while (!Serial);
 
         // Initialize MCP2515 CAN controller at 500kbps
-        if (CAN.begin(MCP_ANY, CAN_500KBPS, MCP_16MHZ) == CAN_OK) {
+        if (CAN.begin(MCP_ANY, CAN_500KBPS, MCP_16MHZ) == CAN_OK) 
+        {
                 Serial.println("MCP2515 Initialized Successfully!");
-        } else {
+        } 
+        
+        else 
+        {
                 Serial.println("Error Initializing MCP2515...");
                 while (1);
         }
+        
         CAN.setMode(MCP_NORMAL); // Set operation mode to normal so the MCP2515 sends/receives data
 
         Serial.println("CAN BUS Shield Init OK!");
