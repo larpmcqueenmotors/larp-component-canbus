@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "Senal",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "chip-mcp2515", "id": "can1", "top": -160, "left": -90, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r_term", "top": -168, "left": -185, "rotate": 90, "attrs": { "value": "120" } }
+  ],
+  "connections": [
+    [ "can1:VCC", "uno:5V", "red", [] ],
+    [ "can1:GND", "uno:GND.2", "black", [] ],
+    [ "can1:CS", "uno:10", "orange", [] ],
+    [ "can1:SO", "uno:12", "green", [] ],
+    [ "can1:SI", "uno:11", "blue", [] ],
+    [ "can1:SCK", "uno:13", "purple", [] ],
+    [ "can1:INT", "uno:2", "gray", [] ],
+    [ "can1:CANH", "r_term:1", "gold", [] ],
+    [ "can1:CANL", "r_term:2", "cyan", [] ]
+  ],
+  "dependencies": {}
+}

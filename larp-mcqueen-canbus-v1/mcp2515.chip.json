@@ -1,0 +1,21 @@
+{
+  "name": "MCP2515 CAN Module",
+  "author": "Senal",
+  "pins": [
+    "CANH",
+    "CANL",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "INT",
+    "SCK",
+    "SI",
+    "SO",
+    "CS",
+    "GND",
+    "VCC"
+  ],
+  "controls": []
+}
